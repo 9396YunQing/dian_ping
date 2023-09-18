@@ -121,11 +121,11 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         stringRedisTemplate.opsForValue().set(LOGIN_CODE_KEY + phone, code, LOGIN_CODE_TTL, TimeUnit.MINUTES);
         log.info("发送登录验证码：{}", code);
         // 发送验证码
-        /*try {
+        try {
             MailUtils.sendTestMail(phone, code);
         } catch (MessagingException e) {
             e.printStackTrace();
-        }*/
+        }
         return Result.ok();
     }
 
