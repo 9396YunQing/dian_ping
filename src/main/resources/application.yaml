@@ -5,13 +5,13 @@ spring:
     name: hmdp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/dianping?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/dianping?useSSL=false&serverTimezone=UTC
     username: root
-    password: 123456
+    password: Aa93965211
   redis:
     host: 112.124.6.46 # redis服务的地址
     port: 6379
-    password: 123456
+    password: Aa93965211
     lettuce:
       pool:
         max-active: 10
